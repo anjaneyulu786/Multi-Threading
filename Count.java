@@ -6,12 +6,9 @@ class Count extends Thread
      System.out.println("my thread created" + this);
      start();
    }
-   public void run()
-   {
-     try
-     {
-        for (int i=0 ;i<10;i++)
-        {
+   public void run() {
+     try {
+        for (int i=0 ;i<10;i++) {
            System.out.println("Printing the count " + i);
            Thread.sleep(1000);
         }
