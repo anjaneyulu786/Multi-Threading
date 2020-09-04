@@ -2,9 +2,9 @@ class Count extends Thread
 {
    Count()
    {
-     super("my extending thread");
-     System.out.println("my thread created" + this);
-     start();
+     super ("my extending thread");
+     System.out.println ("my thread created" + this);
+     start ();
    }
    public void run() {
      try {
@@ -22,7 +22,7 @@ class Count extends Thread
 }
 class ExtendingExample
 {
-   public static void main(String args[])
+   public static void main (String args[])
    {
       Count cnt = new Count ();
       try
